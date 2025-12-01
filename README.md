@@ -52,11 +52,12 @@ If all 5 philosophers pick up their left chopstick at the same time:
 ## Part 1: Observe the Deadlock (5 points)
 
 1. Run the dining philosophers demo: `./philosophers`
-2. Watch for deadlock (program stops producing output but doesn't exit)
-3. You may need to run it several times - deadlock doesn't always happen immediately
-4. Press Ctrl+C to kill the program when it deadlocks
+2. Each philosopher needs to eat 5 bites. If successful, you'll see "SUCCESS! All philosophers finished eating!"
+3. Watch for deadlock (program stops producing output but doesn't exit)
+4. You may need to run it several times - deadlock doesn't always happen immediately
+5. Press Ctrl+C to kill the program when it deadlocks
 
-**Question:** What was the last output you saw before the program stopped? (Copy the last few lines)
+**Question:** What was the last output you saw before the program froze? (Copy the last few lines)
 
 ---
 
@@ -90,8 +91,8 @@ if (id == 4) {
 **Test your fix:**
 1. Rebuild: `cmake --build .`
 2. Run: `./philosophers`
-3. Let it run for 30+ seconds - it should NOT freeze
-4. Press Ctrl+C to stop when satisfied
+3. If your fix works, you'll see "SUCCESS! All philosophers finished eating!"
+4. If it freezes, your fix didn't work - try again!
 
 ---
 
